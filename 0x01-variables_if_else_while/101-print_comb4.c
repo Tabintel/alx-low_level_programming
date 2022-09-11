@@ -18,24 +18,28 @@ int main(void)
 		i = 48;
 		while (i < 58)
 		{
-			if (e != i && e != g && e < i && i < g)
+			g =48;
+			while (g < 58)
 			{
-				putchar(e);
-				putchar(i);
-				putchar(g);
-				if (i == 56 && e == 55 && g == 57)
+                   
+				if (e != i && e != g && e < i && i < g)
 				{
-					break;
+					putchar(e);
+					putchar(i);
+					putchar(g);
+					if (i == 56 && e == 55 && g == 57)
+					{
+						break;
+					}
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
+				g++;
 			}
-			g++;
+			i++;
 		}
-		i++;
+		e++;
 	}
-	e++;
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
