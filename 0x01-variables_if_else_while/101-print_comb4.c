@@ -18,10 +18,9 @@ int main(void)
 		i = 48;
 		while (i < 58)
 		{
-			g =48;
+			g = 48;
 			while (g < 58)
 			{
-                   
 				if (e != i && e != g && e < i && i < g)
 				{
 					putchar(e);
