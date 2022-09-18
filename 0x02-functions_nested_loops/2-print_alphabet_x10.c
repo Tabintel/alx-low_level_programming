@@ -7,12 +7,14 @@
  */
 void print_alphabet_x10(void)
 {
-	int count = 0;
-	char letter;
-	while (count++ <= 9)
+	int ekemini, b;
+
+	for (ekemini = 0; ekemini <= 9; ekemini++)
 	{
-		for (letter = 'a'; letter <= 'z'; letter++)
-			_putchar(letter);
-			_putchar('/n');
+		for (b = 97; b <= 122; b++)
+		{
+			_putchar(b);
+		}
+	_putchar('\n');
 	}
 }
