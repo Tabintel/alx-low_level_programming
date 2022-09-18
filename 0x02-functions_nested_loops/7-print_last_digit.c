@@ -2,11 +2,10 @@
 
 /**
  * print_last_digit - Prints the last digit
- * of a number.
+ * @r: An integer input
+ * Description: This function prints the last digit of a number
  *
- * @n: input number as an integer.
- *
- * Return: last digit.
+ * Return: last digit of number r
  */
 int print_last_digit(int r)
 {
