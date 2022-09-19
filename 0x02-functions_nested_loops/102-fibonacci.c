@@ -12,6 +12,7 @@ int main(void)
 	{
 		
 		printf("%ld, ", x);
+		
 		sum = x + y;
 		x = y;
 		y = sum;
