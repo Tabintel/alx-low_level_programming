@@ -1,33 +1,32 @@
 #include "main.h"
 
 /**
- * times_table - Prints the 9 times table
- *
- * Return: Always 0 (Success)
+ * times_table - Check description
+ * Description: It prints 9 times tablle starting with 0
+ * Return: Nothing.
  */
 void times_table(void)
 {
-	int jasper, alx, op;
+	int i, j, n;
 
-	for (jasper = 0; jasper <= 9; jasper++)
+	for (i = 0; i <= 9; i++)
 	{
-		_putchar(48);
-		for (alx = 1; alx <= 9; alx++)
+		for (j = 0; j <= 9; j++)
 		{
-			op = jasper * alx;
-			_putchar(44);
-			_putchar(32);
-			if (op <= 9)
+			n = i * j;
+
+			if ((n / 10) == 0)
 			{
-				_putchar(32);
-				_putchar(op + 48);
+				if (j != 0)
+					_putchar(' ');
+				_putchar(n + '0');
+
+				if (j == 9)
+					continue;
+				_putchar(',');
+				_putchar(' ');
 			}
-			else
-			{
-				_putchar((op / 10) + 48);
-				_putchar((op % 10) + 48);
-			}
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
