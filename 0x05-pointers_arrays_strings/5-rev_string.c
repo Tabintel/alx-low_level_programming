@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * rev - function that reverses and swapss two char
  * @: first parameter
@@ -19,6 +20,7 @@ void rev(char *a, char *b)
 /**
  * rev_string - function that reverses a string
  * @s: string to reverse
+ * @a: another pparameter
  * Return: void
  */
 
@@ -35,7 +37,7 @@ void rev_string(char *s)
 	j = 0;
 	while (i > j)
 	{
-		rev(s + i, s +j);
+		rev(s + i, s + j);
 		j++;
 		i--;
 	}
