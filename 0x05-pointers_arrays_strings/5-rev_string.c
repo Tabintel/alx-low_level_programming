@@ -3,7 +3,7 @@
 
 /**
  * rev - function that reverses and swapss two char
- * @: first parameter
+ * @a: first parameter
  * @b: second parameter
  * Return: void
  */
@@ -20,7 +20,6 @@ void rev(char *a, char *b)
 /**
  * rev_string - function that reverses a string
  * @s: string to reverse
- * @a: another pparameter
  * Return: void
  */
 
