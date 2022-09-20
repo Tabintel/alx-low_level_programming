@@ -37,6 +37,6 @@ void rev_string(char *s)
 	{
 		rev(s + i, s +j);
 		j++;
-		i__;
+		i--;
 	}
 }
