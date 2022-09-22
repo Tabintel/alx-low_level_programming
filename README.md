@@ -1,1 +1,1 @@
-Our C program
+Debugging basics
